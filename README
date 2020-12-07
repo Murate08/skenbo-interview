@@ -1,24 +1,71 @@
-WEBAPP ADD WORDS AND TRANSLETED WORDS
+**********************************Engles language***********************************
+WEBAPP ADD PLACES AND BUILD
+
+TECH'S FRONT-END:
+-REACT.JS
+    *JS LIBRARY 
+-TYPESCRIPT
+    *LANGUANGE
+-MATERIAL UI
+    *STYLES COMPONENET
+-AXIOS
+    *CONNECT TO API
+
+-LEAFLET
+    *MAP-VIEW
+
+-MAP-BOX
+    *MAP-TOKEN
+
+    
+
+STEPS TO RUN APP
+
+1- GIT CLONE THE SERVER  first and follow the steps in README file in server file
 
 
-1- INSTALL node-Modules 
+2- Clone WEBAPP and run this comand'a
+
+3- INSTALL node-Modules 
     command - npm install or npm i  
+       or   - yarn install
 
-2- RUN THE PROJECT
-    command - npm start or npmi
-
-
-
-
-WEBAPP СОЗДАТЬ ПОЛЬЗОВАТЕЛЯ И ПОИСК ПОЛЬЗОВАТЕЛЯ
+4- RUN THE PROJECT
+    command - npm start or yarn start
 
 
-1- УСТАНОВИТЬ node-Modules
-     команда - npm install, npm i или yarn install
+**********************************Russian language***********************************
+ДОБАВИТЬ МЕСТА И СОЗДАТЬ ВЕБАП
 
-2- ЗАПУСТИТЬ ПРОЕКТ
-     команда - npm start или yarn start
+ПЕРЕДНЯЯ ЧАСТЬ ТЕХНИКИ:
+-REACT.JS
+     * БИБЛИОТЕКА JS00
+-МАШИНОПИСЬ
+     * ЯЗЫК
+-МАТЕРИАЛЬНЫЙ UI
+     * СТИЛИ КОМПОНЕНЕТ
+-АКСИО
+     * ПОДКЛЮЧИТЬСЯ К API
+
+-ПРОФЕТ
+     * ВИД КАРТЫ
+
+-КАРТА-КОРОБКА
+     * КАРТА-ТОКЕН
+
+ШАГИ ДЛЯ ЗАПУСКА ПРИЛОЖЕНИЯ
+
+1- GIT КЛОНИРУЙТЕ СЕРВЕР и следуйте инструкциям в файле README в файле сервера.
+
+
+2- Клонировать WEBAPP и запускать эту comand'a
+
+3- УСТАНОВИТЬ node-Modules
+     команда - npm install или npm i
+        или - пряжа dev
+4- ЗАПУСТИТЕ ПРОЕКТ
+     команда - начало npm или начало пряжи
 
 
 
-Ayad Ossaile developer 
+Developer AYAD OSSAILE

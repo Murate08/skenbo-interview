@@ -1,18 +1,28 @@
 import React from 'react'
+import {BrowserRouter, Switch, Route} from 'react-router-dom'
 
-import {BrowserRouter, Route} from 'react-router-dom'
-import Landing from './pages/Landing'
-import LibraryForm from './pages/LibraryForm'
-import WordsList from './pages/WordsList'
+
+import HomesMap from './pages/HomesMap';
+
+import Place from './pages/Place';
+import CreatePlaces from './pages/CreatePlaces'
+
+
 
 
 function Routes(){
+
     return(
         <BrowserRouter>
-                <Route path="/" exact component={Landing} />
-                <Route path="/find-words" component={WordsList} />
-                <Route path="/library" component={LibraryForm} />
+        <Switch>
+       
+            <Route exact path="/"  component={HomesMap} />
+            <Route path="/places/create"  component={CreatePlaces}/>
+            <Route path="/places/:id"  component={Place} />
+
+        </Switch>
         </BrowserRouter>
-    )
+    );
 }
-export default Routes;
+
+export default Routes

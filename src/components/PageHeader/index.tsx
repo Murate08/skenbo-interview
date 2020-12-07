@@ -1,33 +1,24 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import logo from '../../assets/images/logo.png'
-import backIcon from '../../assets/images/icons/back.svg'
-import './styles.css';
+import {AppBar, Toolbar, Typography} from '@material-ui/core'
+import {FiArrowLeftCircle} from 'react-icons/fi'
+import './styles.css'
+import logo from '../../img/logo.png'
 
-interface PageHeaderProps{
-    title: string;
-    description?:string;
-}
-
-const PageHeader: React.FC<PageHeaderProps> =(props) =>{
+const PageHeader = () =>{
     return(
-        <header className="page-header">
-        <div className="top-bar-container" >
-            <Link to="/">
-                <img src={backIcon} alt="Voltar"/>
-            </Link>
-            <img src={logo} alt="EmphaSoft"/>
-        </div>
-        <div className="header-content">
-            <strong>{props.title}</strong>
-            {props.description && <p>{props.description}</p>}
+    <AppBar position="fixed" className="page-header" color="inherit" >
+            <Toolbar>       
 
-
-            {props.children}
-
-        </div>
-
-    </header>
+            <Typography variant="h6" className="top-bar-container" >
+                <Link to="/" >
+                    <FiArrowLeftCircle size={50} color="#007bff" className="link"/>
+                </Link>
+               <img src={logo} alt=""/>
+            </Typography>
+        
+        </Toolbar>
+    </AppBar>
 
     )
 }

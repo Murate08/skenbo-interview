@@ -1,0 +1,214 @@
+#page-create-places {
+  display: flex;
+}
+
+#page-create-places main {
+    flex: 1;
+}
+
+form.create-place-form {
+  position: relative;
+  width: 800px;
+  margin: 80px auto;
+  margin-top: 12rem;
+  background: #FFFFFF;
+  border: 1px solid #D3E2E5;
+  border-radius: 8px;
+  padding: 64px 80px;
+  overflow: hidden;
+}
+
+
+form.create-place-form .leaflet-container{
+      margin-bottom: 40px;
+      border: 1px solid #D3E2E5;
+      border-radius: 8px;
+   
+}
+form.create-place-form fieldset {
+  border: 0;
+}
+
+form.create-place-form fieldset + fieldset {
+  margin-top: 80px;
+}
+
+form.create-place-form fieldset legend {
+  width: 100%;
+  font-size: 32px;
+  line-height: 34px;
+  color: #5C8599;
+  font-weight: 700;
+  border-bottom: 1px solid #D3E2E5;
+  margin-bottom: 40px;
+  padding-bottom: 24px;
+}
+
+form.create-place-form .input-block + .input-block {
+  margin-top: 24px;
+}
+
+form.create-place-form .input-block label {
+  display: flex;
+  color: #8FA7B3;
+  margin-bottom: 8px;
+  line-height: 24px;
+}
+
+form.create-place-form .input-block label span {
+  font-size: 14px;
+  color: #8FA7B3;
+  margin-left: 24px;
+  line-height: 24px;
+}
+
+form.create-place-form .input-block input,
+form.create-place-form .input-block textarea {
+  width: 100%;
+  background: #F5F8FA;
+  border: 1px solid #D3E2E5;
+  border-radius: 8px;
+  outline: none;
+  color: #5C8599;
+}
+
+form.create-place-form .input-block input {
+  height: 64px;
+  padding: 0 16px;
+}
+
+form.create-place-form .input-block textarea {
+  min-height: 120px;
+  max-height: 240px;
+  resize: vertical;
+  padding: 16px;
+  line-height: 28px;
+}
+
+
+form.create-place-form .input-block .image-container img{
+  width: 100%;
+  height: 96px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+form.create-place-form .input-block .image-container{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap:16px ;
+
+}
+form.create-place-form .input-block  .new-image {
+  height: 96px;
+  background: #F5F8FA;
+  border: 1px dashed #96D2F0;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+form.create-place-form .input-block input[type=file]{
+  visibility: hidden;
+  display: none;
+}
+form.create-place-form .input-block .button-select {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+form.create-place-form .input-block .button-select button {
+  height: 96px;
+  background: #F5F8FA;
+  border: 1px solid #D3E2E5;
+  color: #5C8599;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+form.create-place-form .input-block .button-select button.active {
+  background: #EDFFF6;
+  border: 1px solid #007bff;
+  color: #007bff;
+}
+
+form.create-place-form .input-block .button-select button:first-child {
+  border-radius: 20px 0px 0px 20px;
+}
+
+form.create-place-form .input-block .button-select button:last-child {
+  border-radius: 0 20px 20px 0;
+  border-left: 0;
+}
+
+form.create-place-form button.confirm-button {
+  margin-top: 2rem;
+  width: 100%;
+  height: 64px;
+  border: 0;
+  cursor: pointer;
+  background: #007bff;
+  border-radius: 8px;
+  color: #FFFFFF;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s;
+}
+
+form.create-place-form button.confirm-button svg {
+  margin-right: 16px;
+}
+
+form.create-place-form button.confirm-button:hover {
+  background: #026ddf;
+}
+
+
+
+@media(max-width: 660px){
+
+  form.create-place-form{
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  form.create-place-form .leaflet-container{
+    width: 400px !important;
+  }
+ 
+  form.create-place-form .input-block input,
+  form.create-place-form .input-block textarea {
+    width: 400px;
+    background: #F5F8FA;
+    border: 1px solid #D3E2E5;
+    border-radius: 8px;
+    outline: none;
+    color: #5C8599;
+  }
+  form.create-place-form .input-block .select{
+    width: 400px;
+
+  }
+  form.create-place-form .input-block .button-select{
+    justify-content: center;
+    align-items: center;   
+    width: 400px;
+  } 
+  form.create-place-form .input-block{
+    width: 250px;
+  }
+  form.create-place-form  .input-block  .image-container {
+    width: 560px;
+  }
+  
+}
+::placeholder{
+  color: #cccccc;
+}
+
+
+
+
