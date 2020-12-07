@@ -118,7 +118,7 @@ export default function CreatePlaces() {
             <legend>Данных</legend>
 
             <Map 
-                center={[ 59.8312303, 30.4035373]} 
+                center={[55.665156567459036,37.590618409942635]}
                 style={{ width: '100%', height: 280 }}
                 zoom={14}
                 onclick={handleMapclick}

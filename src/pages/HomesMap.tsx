@@ -42,7 +42,7 @@ function PlacesMap() {
     <div id="page-map">                                  
         <PageHeader/>   
         <Map 
-            center={[59.8312303,30.5151346]}
+            center={[55.665156567459036,37.590618409942635]}
             zoom={14}
             style={{width:'100%', height:'100%'}}
         >
